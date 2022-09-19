@@ -2,13 +2,13 @@
 1Blocker解锁永久订阅
 ***************************
 [rewrite_local]
-^https:\/\/api\.revenuecat\.com\/v1\/subscribers url script-response-body 自己命名.js
+^https:\/\/api\.revenuecat\.com\/v1\/subscribers url script-response-body https://raw.githubusercontent.com/WTH200/xiong/main/1?raw=ture.js
 [mitm] 
 hostname = api.revenuecat.com
 
 **************************/
 [rewrite_local]
-^https:\/\/api\.revenuecat\.com\/v1\/subscribers url script-response-body 自己命名.js
+^https:\/\/api\.revenuecat\.com\/v1\/subscribers url script-response-body https://raw.githubusercontent.com/WTH200/xiong/main/1?raw=ture.js
 [mitm] 
 hostname = api.revenuecat.com
 var body = JSON.parse($response.body);
